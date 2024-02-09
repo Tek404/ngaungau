@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    height: 10rem;
+    display: grid;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    touch-action: manipulation;
+
+}
+.calc_button{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    height: 20rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-column: 4 / 5;  */
+    /* grid-row: 2 / span 4;  */
+    grid-gap: 10px;
+    touch-action: manipulation;
+}
+
+button{
+    width:100px;
+    height: 300px;
+}
+
+.calc_button > button {
+    height: 95%;
+    font-size: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+div {
+    margin-bottom: 15px;
+    touch-action: manipulation;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    touch-action: manipulation;
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#selectedNumbers {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#variantsOutput {
+    border: 1px solid #ccc;
+    padding: 10px;
+    touch-action: manipulation;
+
+}
+
+
+div > div {
+    margin-bottom: 5px;
+}
+
+div > div:last-child {
+    margin-bottom: 0;
+}
